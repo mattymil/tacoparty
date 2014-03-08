@@ -8,7 +8,13 @@ function scrollNext(iter) {
     this.iter = iter;
 
     if (iter == 1) {
-        window.scrollTo(0, 625);
-    } else window.scrollTo(0, 750);
-    return false;
+        $('footer').ScrollTo({
+            duration: 2000,
+            easing: 'swing',
+            callback: function () {
+                alert("callback executed");
+            }
+        });
+    } else
+        alert("you didn't give me the right value");
 }
