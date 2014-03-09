@@ -9,6 +9,22 @@
     <script src="scripts/jquery-1.11.0.min.js"></script>
     <script src="scripts/jquery-scrollto/balupton-jquery-scrollto-a30313e/lib/jquery-scrollto.js"></script>
     <script src="scripts/jquery-ui-1.10.4.custom.js"></script>
+    <script src="scripts/jquery.slides.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#slides").slidesjs({
+                width: 900,
+                height: 599,
+                navigation: {
+                    active: true,
+                    effect: "slide"
+
+                }
+            });
+        });
+
+    </script>
 
 </head>
 
@@ -17,16 +33,42 @@
     <img id="sombrero_top" src="images/devinsombrero.gif" alt="Top of sombrero">
 </section>
 <section id="veil">
-    <h1 id="veil_title">It's coming...</h1>
+    <h1 class="veil_title">It's coming...</h1>
+
+    <h2 class="veil_title">(Click)</h2>
     <a onclick="scrollNext(1)" href="#"> <img id="downarrow" src="images/down-arrow.gif"
                                               alt="Down Button"></a>
-</section>
-<section id="down-arrow"></section>
-<section id="bottom">
-    <section>
-        <p id="bottom_message">this is a test</p>
+
+    <section id="veil_message_stopper"></section>
+    <section id="veil_message">
+        <h1>Taco Party 2014</h1>
+
+        <p>@ the Millers</p>
+
+        <p>44 Churchill Dr</p>
+
+        <p>York, PA 17403</p>
+
+        <p>RSVP by March 14, 2014</p>
+
+        <p>to <a href="mailto:mattymil2@gmail.com">mattymil2@gmail.com</a></p>
+
     </section>
+
+    <div id="slides">
+
+        <img src="images/1.jpg">
+        <img src="images/2.jpg">
+        <img src="images/3.jpg">
+        <img src="images/4.jpg">
+        <img src="images/5.jpg">
+
+    </div>
 </section>
+
+
+<section id="down-arrow"></section>
+
 
 <footer>
 

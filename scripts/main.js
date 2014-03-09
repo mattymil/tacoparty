@@ -8,7 +8,7 @@ function scrollNext(iter) {
     this.iter = iter;
 
     if (iter == 1) {
-        $('footer').ScrollTo({
+        $('#veil_message_stopper').ScrollTo({
             duration: 2000,
             easing: 'swing',
             callback: function () {
@@ -18,3 +18,5 @@ function scrollNext(iter) {
     } else
         alert("you didn't give me the right value");
 }
+
+
