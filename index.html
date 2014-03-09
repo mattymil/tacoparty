@@ -14,13 +14,20 @@
     <script>
         $(function () {
             $("#slides").slidesjs({
-                width: 900,
+                width: 600,
                 height: 599,
-                navigation: {
-                    active: true,
-                    effect: "slide"
 
+                play: {
+                    active: false,
+                    effect: "slide",
+                    interval: 4000,
+                    auto: true,
+                    swap: false,
+                    pauseOnHover: false,
+                    restartDelay: 2500
                 }
+
+
             });
         });
 

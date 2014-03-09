@@ -17,6 +17,7 @@
 
 #slides {
     display: none;
+    box-shadow: #A68800 0 5px 5px 5px;
 }
 
 html {
@@ -79,9 +80,18 @@ h2.veil_title {
     font-family: "Taco Modern", sans-serif;
     text-align: center;
     margin-top: 40%;
+    margin-bottom: 20px;
 
 }
 
 #veil_message:first-child {
     font-size: 200%;
+}
+
+.slidesjs-navigation {
+    display: none;
+}
+
+.slidesjs-pagination-item {
+    display: none;
 }
