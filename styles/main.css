@@ -14,7 +14,6 @@
     margin: 0;
     padding: 0;
 }
-
 #slides {
     display: none;
     box-shadow: #A68800 0 5px 5px 5px;
@@ -32,12 +31,17 @@ body {
 
 }
 
+
+.hidden {
+    display: none;
+}
+
 #veil {
     border: solid 1px #A68800;
     background-color: #ffdd40;
     width: 95%;
     margin: 30% 7.5% 7.5% 7.5%;
-    height: 1500px;
+    height: 3000px;
     box-shadow: 0px 5px 5px 5px #A68800;
     float: left;
 
@@ -50,9 +54,10 @@ body {
     z-index: -1;
 }
 
-#downarrow {
+.downarrow {
     margin-left: 400px;
     margin-top: 5%;
+    margin-bottom: 0;
 }
 
 .veil_title {
@@ -64,6 +69,11 @@ body {
 
 p.veil_title {
     font-size: 150%;
+    margin-bottom: 30px;
+}
+
+#sloppy_arrow{
+
 }
 
 h2.veil_title {
@@ -71,18 +81,23 @@ h2.veil_title {
 
 }
 
-#veil_message_stopper {
-    margin-top: 30%;
-}
+
 
 #veil_message {
 
     font-family: "Taco Modern", sans-serif;
     text-align: center;
-    margin-top: 40%;
-    margin-bottom: 20px;
+    margin-top: 50%;
+    margin-bottom: 30px;
 
 }
+
+#slides{
+    margin: 10px;
+    height: 400px;
+
+}
+
 
 #veil_message:first-child {
     font-size: 200%;
@@ -94,4 +109,9 @@ h2.veil_title {
 
 .slidesjs-pagination-item {
     display: none;
+}
+
+#sloppy_arrow {
+    clear: both;
+    margin-left: 350px;
 }

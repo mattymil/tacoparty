@@ -5,48 +5,54 @@
     <title>It's Coming</title>
     <meta name="keyword" content="Taco, Party, sombrero, fiesta, dragons, shet">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js">
+
+
+    </script>
     <script src="scripts/jquery-1.11.0.min.js"></script>
     <script src="scripts/jquery-scrollto/balupton-jquery-scrollto-a30313e/lib/jquery-scrollto.js"></script>
     <script src="scripts/jquery-ui-1.10.4.custom.js"></script>
     <script src="scripts/jquery.slides.min.js"></script>
 
-    <script>
-        $(function () {
-            $("#slides").slidesjs({
-                width: 600,
-                height: 599,
-
-                play: {
-                    active: false,
-                    effect: "slide",
-                    interval: 4000,
-                    auto: true,
-                    swap: false,
-                    pauseOnHover: false,
-                    restartDelay: 2500
-                }
-
-
-            });
-        });
-
-    </script>
 
 </head>
 
 <body>
+<script>
+    hideELs();
+</script>
+
 <section id="obscured_image">
     <img id="sombrero_top" src="images/devinsombrero.gif" alt="Top of sombrero">
 </section>
 <section id="veil">
     <h1 class="veil_title">It's coming...</h1>
 
-    <h2 class="veil_title">(Click)</h2>
-    <a onclick="scrollNext(1)" href="#"> <img id="downarrow" src="images/down-arrow.gif"
-                                              alt="Down Button"></a>
 
-    <section id="veil_message_stopper"></section>
+    <a onclick="scrollNext(1)" href="#"> <img class="downarrow" src="images/down-arrow.gif" alt="Down Button"></a>
+
+    <p class="veil_title">(Click)</p>
+    <section id="hider" class="hidden">
+    <img id="sloppy_arrow" src="images/arrow.gif">
+
+    <h3 id="veil_title" class="veil_title">On the fence? </h3>
+
+    <h3 class="veil_title">Consider this...</h3>
+
+    <div id="slides">
+
+        <img src="images/1.jpg">
+        <img src="images/2.jpg">
+        <img src="images/3.jpg">
+        <img src="images/4.jpg">
+        <img src="images/5.jpg">
+
+    </div>
+
+    <a onclick="scrollNext(2)" href="#"> <img class="downarrow" src="images/down-arrow.gif" alt="Down Button"></a>
+
+    <p class="veil_title" id="rsvp">(Click)</p>
+
     <section id="veil_message">
         <h1>Taco Party 2014</h1>
 
@@ -62,25 +68,10 @@
 
     </section>
 
-    <div id="slides">
 
-        <img src="images/1.jpg">
-        <img src="images/2.jpg">
-        <img src="images/3.jpg">
-        <img src="images/4.jpg">
-        <img src="images/5.jpg">
-
-    </div>
 </section>
 
-
-<section id="down-arrow"></section>
-
-
-<footer>
-
-
-</footer>
+</section>
 </body>
 
 </html>
