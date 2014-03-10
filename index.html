@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>It's Coming</title>
+    <title>Taco Party 2014</title>
     <meta name="keyword" content="Taco, Party, sombrero, fiesta, dragons, shet">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <script src="scripts/main.js">
-
-
-    </script>
+    <!--Shiv for less than modern browsers-->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="scripts/main.js"></script>
     <script src="scripts/jquery-1.11.0.min.js"></script>
     <script src="scripts/jquery-scrollto/balupton-jquery-scrollto-a30313e/lib/jquery-scrollto.js"></script>
     <script src="scripts/jquery-ui-1.10.4.custom.js"></script>
@@ -18,9 +17,7 @@
 </head>
 
 <body>
-<script>
-    hideELs();
-</script>
+
 
 <section id="obscured_image">
     <img id="sombrero_top" src="images/devinsombrero.gif" alt="Top of sombrero">
@@ -33,43 +30,44 @@
 
     <p class="veil_title">(Click)</p>
     <section id="hider" class="hidden">
-    <img id="sloppy_arrow" src="images/arrow.gif">
+        <img class="sloppy_arrow" src="images/arrow.gif">
 
-    <h3 id="veil_title" class="veil_title">On the fence? </h3>
+        <h3 id="veil_title" class="veil_title">On the fence? </h3>
 
-    <h3 class="veil_title">Consider this...</h3>
+        <h3 class="veil_title">Consider this...</h3>
 
-    <div id="slides">
+        <div id="slides">
 
-        <img src="images/1.jpg">
-        <img src="images/2.jpg">
-        <img src="images/3.jpg">
-        <img src="images/4.jpg">
-        <img src="images/5.jpg">
+            <img src="images/1.jpg">
+            <img src="images/2.jpg">
+            <img src="images/3.jpg">
+            <img src="images/4.jpg">
+            <img src="images/5.jpg">
 
-    </div>
+        </div>
 
-    <a onclick="scrollNext(2)" href="#"> <img class="downarrow" src="images/down-arrow.gif" alt="Down Button"></a>
+        <a onclick="scrollNext(2)" href="#"> <img class="downarrow" src="images/down-arrow.gif" alt="Down Button"></a>
 
-    <p class="veil_title" id="rsvp">(Click)</p>
+        <p class="veil_title">(Click)</p>
+        <img class="sloppy_arrow" src="images/arrow.gif">
 
-    <section id="veil_message">
-        <h1>Taco Party 2014</h1>
+        <section id="rsvp">
+            <h1>Taco Party 2014</h1>
 
-        <p>@ the Millers</p>
+            <p>@ the Millers</p>
 
-        <p>44 Churchill Dr</p>
+            <p>44 Churchill Dr</p>
 
-        <p>York, PA 17403</p>
+            <p>York, PA 17403</p>
 
-        <p>RSVP by March 14, 2014</p>
+            <p>RSVP by March 14, 2014</p>
 
-        <p>to <a href="mailto:mattymil2@gmail.com">mattymil2@gmail.com</a></p>
+            <p>to <a href="mailto:mattymil2@gmail.com">mattymil2@gmail.com</a></p>
+
+        </section>
+
 
     </section>
-
-
-</section>
 
 </section>
 </body>

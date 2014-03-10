@@ -1,3 +1,8 @@
+/*change elements created by the shiv from inline to block */
+article, aside, figure, footer, header, nav, section {
+    display: block;
+}
+
 @font-face {
     font-family: "Taco Modern";
     src: url("TACOM___.eot?") format("eot"), url("TACOM___.woff") format("woff"), url("TACOM___.ttf") format("truetype"), url("TACOM___.svg#TacoModern") format("svg");
@@ -14,6 +19,7 @@
     margin: 0;
     padding: 0;
 }
+
 #slides {
     display: none;
     box-shadow: #A68800 0 5px 5px 5px;
@@ -30,7 +36,6 @@ body {
     height: 1600px;
 
 }
-
 
 .hidden {
     display: none;
@@ -72,16 +77,11 @@ p.veil_title {
     margin-bottom: 30px;
 }
 
-#sloppy_arrow{
-
-}
 
 h2.veil_title {
     font-size: 200%;
 
 }
-
-
 
 #veil_message {
 
@@ -92,12 +92,18 @@ h2.veil_title {
 
 }
 
-#slides{
+#rsvp {
+    font-family: "Taco Modern", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#slides {
     margin: 10px;
     height: 400px;
 
 }
-
 
 #veil_message:first-child {
     font-size: 200%;
@@ -111,7 +117,7 @@ h2.veil_title {
     display: none;
 }
 
-#sloppy_arrow {
+.sloppy_arrow {
     clear: both;
     margin-left: 350px;
 }

@@ -22,11 +22,12 @@ function scrollNext(iter) {
             callback: function () {
                 showMe();
             }
-        }); }else
+        });
+    } else
         alert("you didn't give me the right value");
 }
 
-function showMe(){
+function showMe() {
     $(function () {
         $("#slides").slidesjs({
             width: 600,
@@ -47,6 +48,6 @@ function showMe(){
     });
 }
 
-function hideELs(){
+function hideELs() {
     $("#hider").removeClass("hidden");
 }
